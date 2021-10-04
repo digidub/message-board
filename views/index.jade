@@ -3,3 +3,6 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  ul
+  each obj in messages
+    li= obj.text + ' sent by ' + obj.user + ' on ' + obj.added
