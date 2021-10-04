@@ -3,7 +3,7 @@ extends layout
 block content
   h1= title
   p Submit new message
-    form
+    form(method="post", action="/new")
         div.input
             span.label Name
             input(type="text", name="name")
